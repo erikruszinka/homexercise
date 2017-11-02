@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.js">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.min.js">
+    <title>Document</title>
+    <script>
+     function showAlert()
+     {
+        var fname;
+         fname=document.getElementById("firstname").value;
+         lname=document.getElementById("lastname").value;
+     	//alert("Hello "+fname+" "+lname+" ! You pressed the button");
+         document.getElementById("output").innerHTML="Hello "+fname+" "+lname+" ! You pressed the button"
+     }
+        function deleteOutput(){
+            document.getElementById("output").innerHTML="";
+        }
+        function printMessage(){
+            document.getElementById("message").innerHTML="Click on me!";
+        }
+</script>
+</head>
+<body>
+
+    <table >
+        <tr>
+            <td>Meno:</td> 
+            <td><input type="text"></td>
+            <td>Last name </td> 
+            <td><input type="date"></td>
+            
+    
+        </tr>
+        <tr>
+            <td>Datum narodenia </td> 
+            <td><input type="date"></td>
+            <td>Gender:</td>
+            <td>
+                Male<input type="radio" value="gender" name="Male"><br>
+                Female<input type="radio" value="gender" name="Female">
+            </td>
+            
+           
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td><input type="button" value="Submit"></td>
+        </tr>
+    </table>
+    <br>
+    <div class="menu">
+      <label class="genl" for="">Show gender:</label>
+       <select name="Show gender" class="">
+           <option value="">Male</option>
+           <option value="">Female</option>
+           <option value="">Other</option>
+        </select>
+        <input class="ba" type="checkbox"><label for="Show Birthday/Age">Show Birthday/Age</label>
+    </div>
+    <div class="os">
+    <p id="oper">Operating systems</p>
+    <ul>
+        <li><a href="#">Windows</a></li>
+        <li><a href="#">Linux</a></li>
+        <li><a href="#">Android</a></li>
+    </ul>
+    </div>
+    <div class="main">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem sapiente ducimus voluptate recusandae inventore nostrum accusamus hic necessitatibus dignissimos. Dolores aperiam in quos delectus iste veniam distinctio velit alias at!</p>
+        <img src="img/98.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur molestias quo eaque quis dolor iste, itaque alias incidunt veniam, enim accusantium magnam beatae at debitis quaerat soluta quae dolores asperiores.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur molestias quo eaque quis dolor iste, itaque alias incidunt veniam, enim accusantium magnam beatae at debitis quaerat soluta quae dolores asperiores.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur molestias quo eaque quis dolor iste, itaque alias incidunt veniam, enim accusantium magnam beatae at debitis quaerat soluta quae dolores asperiores.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur molestias quo eaque quis dolor iste, itaque alias incidunt veniam, enim accusantium magnam beatae at debitis quaerat soluta quae dolores asperiores.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur molestias quo eaque quis dolor iste, itaque alias incidunt veniam, enim accusantium magnam beatae at debitis quaerat soluta quae dolores asperiores.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur molestias quo eaque quis dolor iste, itaque alias incidunt veniam, enim accusantium magnam beatae at debitis quaerat soluta quae dolores asperiores.</p>
+    </div>
+    <form>
+    <div class="tabulka">
+    <table>
+        <tr>
+            <td>Meno</td>
+            <td><input id="firstname" name="uname" type="text"></td>
+        </tr>
+        <tr>
+            <td>Priezvisko</td>
+            <td><input id="lastname" type="text"></td>
+        </tr>
+        <tr>
+            <td><input type="reset" value="RESET" onclick="deleteOutput()"></td>
+            <td><input type="button" value="OK" onclick="showAlert()" onmouseover="printMessage()"></td>
+        </tr>
+    </table>
+    </div>
+    </form>
+    <div id="output">
+ 
+</div>
+<div id="message">
+    
+</div>
+</body>
+</html>
