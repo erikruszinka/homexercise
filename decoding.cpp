@@ -1,6 +1,6 @@
 /*
-Autor: Boris Galický, 1.N
-Dátum: 28-11-2017
+Autor: Erik Ruszinka
+DÃ¡tum: 28-11-2017
 */
 #include <stdio.h>
 #include <math.h>
